@@ -15,6 +15,6 @@ print(str2.sorted(by: str2))
 */
 
 
-var a:Int = 0
+var a:Int!
 //var a = Int()
 print(a)
