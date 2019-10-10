@@ -8,6 +8,13 @@
 
 import Foundation
 
-print("Hello, World!")
-print("Day 3")
+/*print("Hello, World!")
+var str1 = ["1","2","0","5","4","3"]
+var str2 = ["Bob", "Cat", "Ant", "Fish", "Egg", "Dog"]
+print(str2.sorted(by: str2))
+*/
 
+
+var a:Int = 0
+//var a = Int()
+print(a)
