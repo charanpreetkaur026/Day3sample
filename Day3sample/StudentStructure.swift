@@ -34,6 +34,7 @@ struct Student {
             total = total + i.value
     
         }
+        
     }
     
     mutating  func calcPercentage() {
@@ -57,12 +58,16 @@ struct Student {
         //studentName  = "Charan"
         
     //}
+
     func printData()
     {
+        print("---------------------------------------------")
+        print("STUDENT RESULT")
+        print("---------------------------------------------")
         print("ID: \(studentID)")
         print("Name: \(studentName)")
         print("Total: \(total)")
-        print("Percentage: \(percentage)")
+        print("Percentage: \(percentage)%")
         print("result: \(result)")
     }
     

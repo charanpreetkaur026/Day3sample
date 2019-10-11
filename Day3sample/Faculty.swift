@@ -61,8 +61,11 @@ class Faculty {
     
     func printData()
     {
+        print("---------------------------------------------")
+        print("FACULTY DETAILS")
+        print("---------------------------------------------")
         print(" Faculty ID\t  : \(facultyId) \n Faculty Name : \(firstName) \(lastName) \n Basic salary : $\(basicSalary!) \n Bonus \t\t  : $\(bonus!) \n Total Salary : $\(totalSalary) ")
-        
+       
         
         //print(facultyName)
     }

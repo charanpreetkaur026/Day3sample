@@ -72,5 +72,20 @@ var s2=Student(studentID: 36, studentName: "BOB", marks: ["m1":63, "m2":42, "m3"
 s2.calcTotal()
 s2.calcPercentage()
 s2.calcResult()
-s2.printData()
+//s2.printData()
+
+var f3 = Faculty( facultyId: 103, firstName: "Charan" , lastName: "Kaur", basicSalary: 1300, bonus: 50 )
+f3.total()
+//f1.printData()
+
+var faculties = Dictionary<Int, Faculty>()
+faculties.updateValue(f2, forKey:f2.facultyId)
+faculties.updateValue(f3, forKey:f3.facultyId)
+
+for f in faculties
+{
+    print("****************")
+    f.value.printData()
+     print("****************")
+}
 
