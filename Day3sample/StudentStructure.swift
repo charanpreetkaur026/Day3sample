@@ -10,19 +10,45 @@ import Foundation
 struct Student {
     var studentID: Int
     var studentName: String
-    var marks: [String :Float]
+    var marks:[String: Float]
     var total: Float
+    var percentage:Float
+    var result: String
+    
+    init(studentID: Int, studentName: String, marks:[String: Float]) {
+        self.studentID = studentID
+        self.studentName = studentName
+        self.marks = marks
+        self.total = 0.0
+        self.percentage = 0.0
+        self.result = "unknown"
+    }
     
     
-    
-    
-    func totalMarks()
+    mutating func calcTotal()
     {
-        for i in 5
+        self.total = 0.0
+        for i in self.marks
         {
-            total = total + 
-        }
+            
+            total = total + i.value
     
+        }
+    }
+    
+    mutating  func calcPercentage() {
+        //self.percentage = 0.0
+        percentage=total/5
+    }
+    
+    mutating func calcResult()  {
+        if percentage>50 {
+            return result="Pass"
+        
+        }
+        else{
+            return result="Fail"
+        }
     }
     
     //mutating func setvalue() //mutating allows ton change the value of varaibles
@@ -33,8 +59,11 @@ struct Student {
     //}
     func printData()
     {
-        print(studentID)
-        print(studentName)
+        print("ID: \(studentID)")
+        print("Name: \(studentName)")
+        print("Total: \(total)")
+        print("Percentage: \(percentage)")
+        print("result: \(result)")
     }
     
 }

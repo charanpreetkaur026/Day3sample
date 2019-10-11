@@ -15,13 +15,39 @@ class Faculty {
     var facultyId: Int = 0
     var firstName: String = ""
     var lastName: String = ""
-    var basicSalary : Int!
-    var bonus: Int!
-    var totalSalary: Int = 0
+    var basicSalary : Float!
+    var bonus: Float!
+    var totalSalary: Float = 0
     //func setValue()
     //{
         
     //}
+    
+    
+    
+    
+     convenience init(facultyId: Int, firstName: String, lastName: String, basicSalary: Float, bonus: Float) {
+        self.init(basicSalary: basicSalary, bonus: bonus)
+        self.facultyId=facultyId
+        self.firstName=firstName
+        self.lastName=lastName
+        //self.basicSalary=basicSalary
+        //self.bonus=bonus
+    }
+    convenience init(facultyId: Int, firstName:String, lastName: String) {
+        self.init(basicSalary: 0.0, bonus: 0.0)
+        self.facultyId=facultyId
+        self.firstName=firstName
+        self.lastName=lastName
+
+    }
+     private init(basicSalary: Float, bonus: Float){
+        self.basicSalary=basicSalary
+        self.bonus=bonus
+    }
+    
+    
+    
     func total() {
         //var totalSalary: Int = 0
         //totalSalary = base + bonus1
