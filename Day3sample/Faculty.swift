@@ -9,10 +9,36 @@
 import Foundation
 
 class Faculty {
-    var facultyId: Int = 0
+   
     //var facultyId: Int?  to skip initialization
     //var facultyId: Int!
+    var facultyId: Int = 0
+    var firstName: String = ""
+    var lastName: String = ""
+    var basicSalary : Int!
+    var bonus: Int!
+    var totalSalary: Int = 0
+    //func setValue()
+    //{
+        
+    //}
+    func total() {
+        //var totalSalary: Int = 0
+        //totalSalary = base + bonus1
+        return(totalSalary = basicSalary + bonus)
+    }
+   // func setValues(ID:Int, f_name:Int, l_name ) -> <#return type#> {
+     //   <#function body#>
+   // }
     
-    var studentName: String = ""
+    
+    
+    func printData()
+    {
+        print(" Faculty ID\t  : \(facultyId) \n Faculty Name : \(firstName) \(lastName) \n Basic salary : $\(basicSalary!) \n Bonus \t\t  : $\(bonus!) \n Total Salary : $\(totalSalary) ")
+        
+        
+        //print(facultyName)
+    }
     
 }
